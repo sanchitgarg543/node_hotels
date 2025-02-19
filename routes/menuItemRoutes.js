@@ -24,6 +24,7 @@ router.get("/", async (req, res) => {
     console.log(err);
     res.status(500).json({ error: "Internal server error" });
   }
+  
 });
 
 router.get("/:taste", async (req, res) => {
@@ -41,5 +42,5 @@ router.get("/:taste", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-
+//comment added for testing
 module.exports = router;
