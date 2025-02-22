@@ -75,20 +75,20 @@
 
 // add(2,3,()=>console.log("add complete"))
 // defining
-var fs = require('fs');
-var os = require('os');
-var _ = require('lodash');
+// var fs = require('fs');
+// var os = require('os');
+// var _ = require('lodash');
 
-var user = os.userInfo();
-console.log(user);
-console.log(user.username);
-fs.appendFile('greeting.txt',"Hi"+user.username+"!"+"\n",()=>{
-    console.log("File is created");
-});
-console.log(fs)
+// var user = os.userInfo();
+// console.log(user);
+// console.log(user.username);
+// fs.appendFile('greeting.txt',"Hi"+user.username+"!"+"\n",()=>{
+//     console.log("File is created");
+// });
+// console.log(fs)
 
 
-const notdf = require("./notes.js")
+// const notdf = require("./notes.js")
 
 // console.log("server file is avaialble")
 
@@ -114,21 +114,21 @@ const notdf = require("./notes.js")
 
 //const jsonstring = '{"name":"john","age":30,"city":"New York"}';   //"" outside and inside changing string format so use ' '
 
-const jsonstring = '{"name":"john","age":30,"city":"New York"}';
-const jsonobject = JSON.parse(jsonstring);
-console.log(jsonobject);
-console.log(jsonstring);
+// const jsonstring = '{"name":"john","age":30,"city":"New York"}';
+// const jsonobject = JSON.parse(jsonstring);
+// console.log(jsonobject);
+// console.log(jsonstring);
 
-console.log(jsonobject.age);
+// console.log(jsonobject.age);
 
 
-const objectTOstring = {
-    name :'ashush',
-    age:30
-};
-const json = JSON.stringify(objectTOstring);
-console.log(json);
-console.log(typeof json);
+// const objectTOstring = {
+//     name :'ashush',
+//     age:30
+// };
+// const json = JSON.stringify(objectTOstring);
+// console.log(json);
+// console.log(typeof json);
 
 
 
