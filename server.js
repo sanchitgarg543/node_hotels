@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const db = require("./db");
+require('dotenv').config();
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json()); //req.body
@@ -30,7 +31,8 @@ app.post("/items", (req, res) => {
   // console.log("Data is saved")
   res.send("Data is sent");
 });
+const PORT = process.env.PORT || 3000; //generally paste at the top
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("Listening to port 3000");
 });
